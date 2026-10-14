@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestor de participantes</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="logic.js" defer></script>
+    <script src="cookies.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="cabecera">
+        <div>
+            <h1>Gestor de participantes</h1>
+            <p>Inscripciones para el evento tecnológico</p>
+        </div>
+        <div class="acciones">
+            <button id="abrirAyuda" type="button">Abrir ayuda</button>
+            <button id="cerrarAyuda" type="button">Cerrar ayuda</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="panel">
+            <h2>Alta de participante</h2>
+            <form id="formulario" novalidate>
+                <div class="grid-form">
+                    <label>Nombre
+                        <input id="nombre" name="nombre" maxlength="60">
+                    </label>
+                    <label>Edad
+                        <input id="edad" name="edad" type="number" min="0" max="120" step="1">
+                    </label>
+                    <label>Tipo
+                        <select id="tipo" name="tipo">
+                            <option value="estudiante">Estudiante</option>
+                            <option value="profesional">Profesional</option>
+                            <option value="invitado">Invitado</option>
+                        </select>
+                    </label>
+                    <label>Modalidad
+                        <select id="modalidad" name="modalidad">
+                            <option value="presencial">Presencial</option>
+                            <option value="online">Online</option>
+                        </select>
+                    </label>
+                    <label>Experiencia
+                        <input id="experiencia" name="experiencia" type="number" min="0" max="10" step="any">
+                    </label>
+                </div>
+                <p id="errores" class="error" role="alert"></p>
+                <button type="submit">Añadir participante</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Buscar y filtrar</h2>
+            <div class="filtros">
+                <label>Nombre
+                    <input id="busqueda" type="search" placeholder="Buscar por nombre">
+                </label>
+                <label>Modalidad
+                    <select id="filtroModalidad">
+                        <option value="todas">Todas</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="online">Online</option>
+                    </select>
+                </label>
+            </div>
+            <p id="resultadoFiltro"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Participantes</h2>
+            <div id="listaParticipantes" class="lista"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Estadísticas</h2>
+            <div id="estadisticas" class="estadisticas"></div>
+            <p id="primerMenor"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Importar y exportar</h2>
+            <textarea id="jsonDatos" rows="12" placeholder="Aquí aparecerá el JSON..."></textarea>
+            <div class="acciones">
+                <button id="exportar" type="button">Exportar JSON</button>
+                <button id="importar" type="button">Importar JSON</button>
+            </div>
+            <p id="estadoJson" role="status"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Preferencias</h2>
+            <form id="preferencias" novalidate>
+                <div class="filtros">
+                    <label>Tema
+                        <select id="tema">
+                            <option value="claro">Claro</option>
+                            <option value="oscuro">Oscuro</option>
+                        </select>
+                    </label>
+                    <label>Tamaño
+                        <select id="tamano">
+                            <option value="normal">Normal</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit">Guardar preferencias</button>
+                <button id="restablecer" type="button">Restablecer</button>
+            </form>
+            <p id="estadoPreferencias" role="status"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Panel del evento</h2>
+            <iframe id="panelEvento" title="Resumen del evento" src="panel.html"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aplicación realizada con HTML, CSS y JavaScript.</p>
+    </footer>
+</body>
+</html>
