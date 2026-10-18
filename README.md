@@ -150,8 +150,34 @@ Antes de entregar hay que realizar una captura real de DevTools con un punto de 
 La IA se ha utilizado como apoyo para consultar conceptos, revisar errores y comparar soluciones. Antes de entregar se deben conservar las consultas utilizadas y añadir el enlace accesible al chat indicado por la práctica.
 
 **Enlace al chat:** 
+https://chatgpt.com/share/6ad4a1ab-ec50-83eb-ba8f-9e0b71b7798d
 
 ## Evidencias pendientes de añadir
 
 - CAPTURA 1 
 ![alt text](image.png)
+
+-CAPTURA 2 
+Baja y evidencia de la baja
+
+<img width="1911" height="877" alt="borrar" src="https://github.com/user-attachments/assets/d5d14929-d9b9-4dc9-a53d-a1e81a29c32f" />
+<img width="1919" height="961" alt="evidencia borrado" src="https://github.com/user-attachments/assets/dc22731f-48c9-41ca-ba96-abef11f470e8" />
+
+-CAPTURA 3 
+Búsqueda y filtro 
+
+<img width="1860" height="947" alt="no hay coincidencias" src="https://github.com/user-attachments/assets/8998fcd1-41b6-4a61-a987-e7aedc00fe6e" />
+<img width="1916" height="867" alt="filtrado bien" src="https://github.com/user-attachments/assets/0471fa56-0942-4496-9a1f-eb95253a486c" />
+
+-CAPTURA 3
+Exportacion exitosa JSON
+
+<img width="1904" height="846" alt="formato no valido json" src="https://github.com/user-attachments/assets/cd940a21-85e3-46a1-9682-63f3cf258753" />
+<img width="1905" height="763" alt="exportacion exitosa" src="https://github.com/user-attachments/assets/a468d5a6-3e9a-431b-a11c-6040b37568e0" />
+
+-CAPTURA 4
+Cookies y tema
+
+<img width="1901" height="511" alt="temaoscuroletrasgrandes" src="https://github.com/user-attachments/assets/86bf49e1-aace-47f5-8eb9-2cae5eac7eff" />
+
+
